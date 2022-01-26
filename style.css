@@ -1,0 +1,569 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans+Condensed:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+  overflow-x: hidden;
+}
+
+/* -------------------------------------------------HOME PAGE------------------------------------------------ */
+
+/* -------------------------------------------------NAV BAR------------------------------------------------ */
+.navbar-container {
+  width: 100%;
+  height: 75px;
+}
+
+.navbar-inner-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.navbar-item1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navbar-item1 ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item1 ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.navbar-item1 ul a:first-child li {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.navbar-item1 ul a li:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  color: #606060;
+  text-decoration-color: black;
+}
+
+.navbar-item1 ul a li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.navbar-item2 {
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.navbar-item2 a i {
+  color: black;
+  margin: 0 8px;
+  font-size: 20px;
+}
+.navbar-item2 a i:hover {
+  color: #606060;
+}
+
+/* -- ----------------------------------BANNER SECTION------------------------------------- -*/
+.banner-section {
+  background-image: url("/images/MicrosoftTeams-image_9_1512x.webp");
+  width: 100%;
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+/* -- ----------------------------------FeedBack------------------------------------- -*/
+.feedback-box {
+  width: 43px;
+  height: 130px;
+  background-color: #f4364c;
+  position: fixed;
+  border-radius: 3px 0 0 3px;
+  right: 0;
+  top: 50%;
+  transform: translate(3px, -50%);
+}
+
+.feedback-box a {
+  text-decoration: none;
+}
+.feedback-box:hover {
+  transition: transform 0.3s ease-in;
+  box-shadow: 0 0 35px 2px rgba(0, 0, 0, 0.24);
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+.feedback-flexbox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.feedback-flexbox div {
+  color: white;
+  font-size: 13px;
+  writing-mode: vertical-lr;
+  align-self: center;
+  margin-bottom: 14px;
+}
+
+.feedback-flexbox i {
+  font-size: 20px;
+  color: white;
+  align-self: center;
+}
+
+/* -- ----------------------------------Collection cards------------------------------------- -*/
+.collection-cards {
+  margin: auto;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 91%;
+}
+
+.collection-cards a {
+  width: 32%;
+  height: 380px;
+  text-decoration: none;
+  color: #3a3a3a;
+}
+.collection-card1 {
+  background-image: url("/images/AdobeStock_418826106_360x.webp");
+}
+.collection-card2 {
+  background-image: url("/images/AdobeStock_270082545_360x.webp");
+}
+
+.collection-card3 {
+  background-image: url("/images/AdobeStock_255919591_360x.webp");
+}
+
+.overlay-effect {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  height: 380px;
+  background-size: cover;
+}
+
+.overlay-effect::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  opacity: 0.2;
+}
+
+.overlay-effect:hover::after {
+  opacity: 0.5;
+}
+
+.collection-card-styling {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 35%;
+  z-index: 100;
+}
+
+.collection-card-styling img {
+  width: 85%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.collection-card-styling p {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  transform: translateY(-5px);
+  font-weight: lighter;
+}
+
+/* ------------------------------------OUR FAVOURITE SECTION--------------------------- */
+.favourite-section {
+  width: 90%;
+  margin: auto;
+}
+
+.favourite-section h2 {
+  text-align: center;
+  margin: 50px 0;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+.favourite-section-flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.favourite-section-flexbox a {
+  width: 21%;
+  text-decoration: none;
+}
+.favourite-general-styling {
+  position: relative;
+}
+
+.favourite-general-styling:hover p {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.favourite-item-styling {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+}
+.favourite-item-styling::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255 0.35);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 250px;
+  z-index: 10;
+}
+
+.favourite-item-styling:hover::after {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.favourite-item-1 {
+  background-image: url("/images/KYS-10_1080x.webp");
+}
+
+.favourite-item-2 {
+  background-image: url("/images/kys_Gina_1_1080x.webp");
+}
+
+.favourite-item-3 {
+  background-image: url("/images/kys2_1080x.webp");
+}
+
+.favourite-item-4 {
+  background-image: url("/images/kys_Kara_2_1080x.webp");
+}
+.favourite-item-content {
+  margin-left: -15px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+}
+
+.favourite-item-content p {
+  margin: 0;
+  margin-bottom: 5px;
+  width: fit-content;
+}
+
+.favourite-item-content span {
+  font-size: 14px;
+}
+
+/* ------------------------------------------GALLERY SECTION---------------------------------------- */
+.gallery-section {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.gallery-pic-1 {
+  background-image: url("/images/kys_Gina_1_540x.webp");
+}
+.gallery-pic-2 {
+  background-image: url("/images/kys_Tabea_1_540x.webp");
+}
+.gallery-pic-3 {
+  background-image: url("/images/kys_Johanna_1_540x.webp");
+}
+.gallery-pic-general-styling {
+  height: 100%;
+  width: 33.33%;
+  background-size: cover;
+  background-position-y: 50vh;
+}
+
+/* ------------------------------------------FOOTER----------------------------------------- */
+/* -------------------------------------FOOTER SECTION 1--------------------------------------- */
+.footer-section-1 {
+  background-color: #f6f6f6;
+  height: 240px;
+  width: 100%;
+  border-bottom: 1px solid rgba(51, 50, 50, 0.35);
+}
+
+.footer-section-1-flexbox {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-section-1-flexbox div {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+.footer-section-1-flexbox div i {
+  font-size: 35px;
+  color: rgba(51, 50, 50, 0.35);
+  align-self: center;
+}
+.footer-section-1-flexbox div p {
+  font-weight: bolder;
+  font-size: 16px;
+  margin-top: 5px;
+}
+/* -------------------------------------FOOTER SECTION 2----------------------------------------- */
+.footer-section-2 {
+  background-color: #f6f6f6;
+  height: 400px;
+  width: 100%;
+  border-bottom: 1px solid rgba(51, 50, 50, 0.35);
+}
+
+.footer-section-2-flexbox {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-section-2-flexbox-item1 {
+  width: 29%;
+  min-height: 240px;
+}
+
+.footer-section-2-flexbox-item1 h2,
+.footer-section-2-flexbox-item2 h2,
+.footer-section-2-flexbox-item3 h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.footer-section-2-flexbox-item1 form input {
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(51, 50, 50, 0.35);
+  padding: 14px 10px;
+}
+.footer-section-2-flexbox-item1 form button {
+  margin-top: 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: #9fa995;
+  padding: 14px 10px;
+  color: white;
+}
+.footer-section-2-flexbox-item1 form button:hover {
+  background-color: #869279;
+}
+
+.footer-section-2-flexbox-item1 i {
+  font-size: 25px;
+  margin-top: 13px;
+  color: #3a3a3a;
+}
+/* ----------------------------------------------- */
+.footer-section-2-flexbox-item2 {
+  width: 15%;
+  min-height: 240px;
+  margin-left: 30px;
+}
+
+.footer-section-2-flexbox-item2 ul,
+.footer-section-2-flexbox-item3 ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section-2-flexbox-item2 ul li,
+.footer-section-2-flexbox-item3 ul li {
+  font-size: 15px;
+  padding: 4px 0;
+  width: fit-content;
+}
+
+.footer-section-2-flexbox-item2 ul li a,
+.footer-section-2-flexbox-item3 ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-section-2-flexbox-item2 ul li a:hover,
+.footer-section-2-flexbox-item3 ul li a:hover {
+  color: #9fa995;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: black;
+}
+
+/* --------------------------------------------- */
+.footer-section-2-flexbox-item3 {
+  width: 15%;
+  min-height: 240px;
+  margin-right: 100px;
+}
+
+/* -------------------------------------FOOTER SECTION 3----------------------------------------- */
+.footer-section-3 {
+  background-color: #f6f6f6;
+  height: 120px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-section-3 p {
+  font-size: 13px;
+  margin: 0;
+  align-self: center;
+  width: 90%;
+  margin: auto;
+}
+.footer-section-3 p a {
+  color: #3a3a3a;
+  text-decoration: none;
+}
+
+.footer-section-3 p a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  color: #869279;
+}
+
+/* ---------------------------------------REGISTER ACCOUNT PAGE--------------------------------------- */
+/*-------------------------------------NAV BAR----------------------------------------- */
+
+.navbar-container-registerpage {
+  width: 100%;
+  height: 140px;
+  border-bottom: 1px solid rgba(51, 50, 50, 0.35);
+}
+.navbar-item0 {
+  background-image: url("/images/kys-logo_540x.webp");
+  width: 180px;
+  height: 130px;
+  background-size: cover;
+  background-position: center;
+  justify-items: flex-start;
+  margin-left: 50px;
+}
+
+/*-- ----------------------------------Create Account Form Section-------------------------------------- */
+
+.create-account-section {
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  max-width: 630px;
+}
+
+.create-account-section h1 {
+  text-align: center;
+  font-weight: bolder;
+  color: #3a3a3a;
+  margin: 0;
+  padding: 0;
+}
+.create-account-section form {
+  display: flex;
+  flex-direction: column;
+  color: #3a3a3a;
+}
+
+.create-account-section form span {
+  font-size: 15px;
+  font-weight: 530;
+  padding-bottom: 8px;
+  padding-top: 20px;
+}
+
+.create-account-section form input {
+  padding: 12px 10px;
+  border: 1px solid #cccccc;
+  font-weight: bold;
+}
+
+.create-account-section form button {
+  margin-top: 20px;
+  width: 110px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  background-color: #9fa995;
+  padding: 11px 13px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  align-self: center;
+}
+
+.create-account-section form button:hover {
+  background-color: #869279;
+}
+
+/* ---------------------------------------LOGIN PAGE--------------------------------------- */
+.create-account-section form a {
+  text-decoration: none;
+  color: #3a3a3a;
+  width: fit-content;
+  margin: auto;
+}
+
+.create-account-section form a p:hover {
+  color: #869279;
+}
+
+.underline-off ul a:first-child li {
+  text-decoration: none;
+}
+
+.underline-off ul a:first-child li:hover {
+  text-decoration: underline;
+}
